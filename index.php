@@ -10,9 +10,13 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/substyle.css">
     <link rel="stylesheet" type="text/css" href="animate/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jockey+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
@@ -44,8 +48,8 @@
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item" style="background: #10ac84; border-radius: 20px; padding: 0px 16px;">
-                        <a class="nav-link" style="color: white;" href="#">Giriş Yap</a>
+                    <li class="nav-item girisBtn-frame">
+                        <a class="nav-link girisBtn" href="#">Giriş Yap</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Kayıt Ol</a>
@@ -57,7 +61,7 @@
         <!----------------------------------------------------------------------------
                                         First Section
         ----------------------------------------------------------------------------->
-        <div clsas="container align-self-center justify-content-center fa-align-center" style="max-width: 80%; margin: 5% auto auto 5%;">
+        <div class="container align-self-center justify-content-center fa-align-center firstSection">
             <div class="row">
                 <div class="col-6 col-md-auto align-self-center justify-content-center">
                     <img src="images/home-i2.png" class="home-i2" alt="">
@@ -65,9 +69,11 @@
 
                 <div class=" col-12 col-md-8 align-self-center">
                     <div style="width: 50%;">
-                        <h1 class="wow fadeInRight" data-wow-duration="5s" data-wow-delay="0.5s" style="color:white; font-family: 'Staatliches', cursive;">Head Titlasdasdase</h1>
+                        <h1 class="wow fadeInRight mainheadTitle" data-wow-duration="5s" data-wow-delay="0.5s">Head Title</h1>
                     </div>
-                    <h4 class="wow fadeInUp" data-wow-duration="5s" data-wow-delay="0.5s" style="color:white; font-family: 'QuickSand', sans-serif;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab cumque veritatis delectus ipsum quam? Quae tempora iste eveniet, omnis iusto dolore mollitia ab modi deleniti, blanditiis eaque magnam. Blanditiis, consequuntur?</h4>
+                    <h4 class="wow fadeInUp mainsubTitle" data-wow-duration="5s" data-wow-delay="0.5s">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab cumque veritatis delectus ipsum quam? Quae tempora iste eveniet, omnis iusto dolore mollitia ab modi deleniti, blanditiis eaque magnam. Blanditiis, consequuntur?
+                    </h4>
                 </div>
 
             </div>
@@ -76,18 +82,13 @@
 
     <!----------------------------------------------------------------------------
                                         Second Section
-        ----------------------------------------------------------------------------->
-    <section id="cover2" style="padding-top: 100px;">
+    ----------------------------------------------------------------------------->
+    <section id="cover2">
         <div class="container">
-            <div class="text-center" style="font-size: 60px; color: #3a3c3f; font-family: 'Staatliches', cursive;">HAKKIMIZDA</div>
-            <div class="jumbotron">
-                <h1 class="display-4">Hello, world!</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                </p>
+            <div class="text-center hakkimizdaTxt">HAKKIMIZDA</div>
+            <div class="jumbotron hakkimizda">
+                <i class="fas fa-quote-left fa-5x" style="position: absolute; margin-top: -100px; opacity: 0.7;"></i>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi amet eos illo doloribus vero tempore nihil, veritatis ullam consectetur nemo beatae pariatur, laborum officiis aperiam sunt voluptatibus accusantium dignissimos corporis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, assumenda sapiente et neque quidem est vel numquam corporis, quis porro maxime, odio dolorem veniam mollitia! Delectus vitae unde voluptas vel.</p>
             </div>
         </div>
     </section>
@@ -117,4 +118,4 @@
         section.className = 'section--purple wow fadeInDown';
         this.parentNode.insertBefore(section, this);
     };
-</script> 
+</script>
